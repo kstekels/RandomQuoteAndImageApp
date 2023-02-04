@@ -15,6 +15,7 @@ class RandomImageListViewModel: ObservableObject {
     
     func getRandomImages(ids: [Int]) async {
         let webService = WebService()
+        randomImages = []
         do {
 //            let randomImages = try await WebService().getRandomImages(ids: ids)
 //            self.randomImages = randomImages.map(RandomImageViewModel.init)
